@@ -21,7 +21,7 @@ public class Test {
             giocatori[i] = new Giocatore("Giocatore", 25, i, true);
         }
         
-        for(int i=0; i<giocatori.length/4; i =+ 4){
+        for(int i=0; i<giocatori.length; i=i+4){
             squadra1.addGiocatore(giocatori[i]);
             squadra2.addGiocatore(giocatori[i+1]);
             squadra3.addGiocatore(giocatori[i+2]);

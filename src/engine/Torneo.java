@@ -42,4 +42,21 @@ public class Torneo {
     public Vector<Squadra> getSquadre() {
         return squadre;
     }
+
+    /**
+     * @param numeroSquadre the numeroSquadre to set
+     */
+    public void setNumeroSquadre(int numeroSquadre) {
+        this.numeroSquadre = numeroSquadre;
+    }
+    
+    public Squadra getSquadraByID(int id){
+        Squadra squadra= null;
+        for(Squadra s: this.getSquadre()){
+            if(s.getID() == id){
+                squadra = s;
+            }
+        }
+        return squadra;
+    }
 }
